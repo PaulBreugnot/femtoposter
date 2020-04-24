@@ -1,0 +1,62 @@
+%!TEX program=luatex
+\documentclass{femtoposter}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+%% {<name>}{<mail>}
+\contacts{Paul Breugnot}{paul.breugnot@univ-fcomte.fr}
+%% {<poster title>}
+\title{Title of the coolest project ever presented}
+
+\begin{document}
+	\begin{block}{Title 1}
+		\blindtext
+	\end{block}
+	\begin{block}{}
+		\centering
+		\begin{figure}
+			\centering
+			\begin{tikzpicture}
+				\draw[fill=lightGrey] (0, 0) rectangle (.9\textwidth, 20cm);
+			\end{tikzpicture}
+			\caption{This figure perfectly shows why this project is so cool.}
+		\end{figure}
+	\end{block}
+	\begin{block}{Title 3}
+		\begin{itemize}
+			\item Items are so cool
+				\begin{itemize}
+					\item You can even nest them...
+						\begin{itemize}
+							\item ... on multiple levels
+						\end{itemize}
+				\end{itemize}
+			\item But enums are cool too!
+				\begin{enumerate}
+					\item first item
+					\item second item
+					\item \blindtext
+				\end{enumerate}
+		\end{itemize}
+	\end{block}
+
+	% Switch to second column
+	\secondcolumn
+
+	\begin{block}{}
+		\centering
+		\begin{tikzpicture}
+			\draw[fill=lightGrey] (0, 0) rectangle (.99\textwidth, 20cm);
+		\end{tikzpicture}
+	\end{block}
+	\begin{block}{Title 2}
+		\blindtext
+	\end{block}
+	\begin{block}{}
+		\centering
+		\begin{tikzpicture}
+			\draw[fill=lightGrey] (0, 0) rectangle (.99\textwidth, 25cm);
+		\end{tikzpicture}
+	\end{block}
+\end{document}
