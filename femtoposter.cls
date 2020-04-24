@@ -76,7 +76,7 @@
 
 		% Top-right background
 		\node[anchor=north east] at ([xshift=.5cm,yshift=.5cm] current page.north east)
-		{\includegraphics[width=44.67cm,height=16.87cm]{img/femto_background.jpg}};
+		{\includegraphics[width=44.67cm]{img/femto_background.jpg}};
 
 		% Bottom right logos
 		\node[anchor=south east,xshift=-\postermargin,yshift=\postermargin] at (current page.south east)
